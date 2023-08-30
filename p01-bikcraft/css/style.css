@@ -1,0 +1,124 @@
+body {
+   margin: 60px 0px 0px 0px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   display: grid;
+   justify-items: center;
+   background-color: #f7f7f7;
+   gap: 60px;
+}
+/* Estilos do header */
+header {
+   display: grid;
+   justify-items: center;
+   gap: 60px;
+}
+ul {
+   gap: 20px;
+   display: flex;
+   list-style: none;
+}
+li a {
+   text-decoration: none;
+   color: #000;
+   background-color: #ffffff;
+   border: 2px solid #fff;
+   padding: 1rem 2rem;
+   text-transform: uppercase;
+   border-radius: 4px;
+}
+li a:hover {
+   border: 2px solid #ee2211;
+}
+
+/* Estilos do main */
+.principal {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   max-width: 1000px;
+   font-size: 20px;
+}
+article img {
+   max-width: 100%;
+}
+div a {
+   text-decoration: none;
+   color: white;
+   background-color: #ee2211;
+   padding: 1rem 2rem;
+   border-radius: 4px;
+}
+.primeiro {
+   background-color: #fff;
+   display: grid;
+   align-content: center;
+   justify-items: end;
+   padding: 30px;
+   gap: 1rem;
+   position: relative;
+}
+.primeiro h1 {
+   font-size: 2rem;
+}
+.primeiro p {
+   text-align: right;
+}
+.verMais:hover {
+   background-color: #bd2113;
+}
+.verMais {
+   transition: 0.5;
+}
+.primeiro::before {
+   content: "";
+   width: 60px;
+   height: 4px;
+   background: #ee2211;
+   position: absolute;
+   top: 15px;
+   right: -30px;
+}
+h1, h2, h3, p {
+   margin: 0px;
+}
+.vantagens {
+   text-align: right;
+   align-self: center;
+   font-size: 2.5rem;
+   padding: 2rem;
+   background-image: url("../img/onda.svg");
+   color: rgba(0, 0, 0, 0.3);
+   text-transform: uppercase;
+}
+.diferenciais {
+   display: grid;
+   background-color: #fff;
+   padding: 40px;
+   margin: 0px;
+   gap: 0px;
+}
+.secao {
+   display: grid;
+   grid-template-columns: auto 1fr;
+   align-items: center;
+   border-left: 5px solid #ffffff00;
+   gap: 5px 15px;
+   padding: 20px;
+}
+.secao p {
+   grid-column: 2;
+}
+.secao:nth-child(odd) {
+   background-color: #f7f7f7;
+}
+.secao:hover {
+   border-left: 5px solid #ee2211;
+}
+/* Estilo do footer */
+footer {
+   background-color: white;
+   width: 100%;
+   text-align: center;
+   padding: 20px;
+   box-sizing: border-box;
+}
