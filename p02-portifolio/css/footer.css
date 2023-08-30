@@ -1,0 +1,40 @@
+.rodape {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 120px 10px;
+   gap: 40px 40px;
+}
+.rodapet {
+   background-color: #000;
+}
+.despedida {
+   justify-self: left;
+   max-width: 350px;
+   padding: 30px 20px;
+   font-size: 1.35rem;
+   color: rgb(172, 172, 172);
+}
+.contato {
+   font-size: 1.7rem;
+   align-self: center;
+   color: #fff;
+}
+.contato p {
+   padding-bottom: 10px;
+   font-weight: bold;
+}
+.direitos {
+   color: rgb(172, 172, 172);
+   font-size: 1.1rem;
+   padding-left: 20px;
+}
+@media (max-width: 550px) {
+   .rodape {
+      grid-template-columns: 1fr;
+      .contato {
+         padding-left: 20px;
+      }
+   }
+}

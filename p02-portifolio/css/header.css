@@ -1,0 +1,39 @@
+.cabecalho {
+   display: flex;
+   max-width: 1200px;
+   justify-content: space-between;
+   margin: auto;
+   padding: 40px 30px;
+   align-items: center;
+   gap: 25px;
+}
+.cabecalho {
+   align-self: flex-start;
+}
+.menu {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 15px;
+}
+.menu a {
+   color: #141414;
+   text-decoration: none;
+   display: block;
+   padding: 10px 15px;
+   border: 2px solid #14141444;
+   border-radius: 5px;
+}
+.menu a:hover {
+   border: 2px solid #141414;
+}
+@media (max-width: 600px) {
+   .cabecalho {
+      flex-direction: column;
+      gap: 40px;
+   }
+}
+@media (max-width: 410px) {
+   .menu {
+      justify-content: center;
+   }
+}

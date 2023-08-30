@@ -1,0 +1,142 @@
+.formacao {
+   display: grid;
+   grid-template-columns: auto 2fr;
+   padding: 40px 30px;
+   max-width: 1200px;
+   margin: 0 auto;
+   gap: 80px;
+}
+.formacaot {
+   background-color: rgb(29, 29, 29);
+   position: relative;
+}
+.form-title {
+   font-size: 8rem;
+   word-break: break-all;
+   max-width: 280px;
+   text-transform: uppercase;
+   color: rgb(0, 0, 0);
+   padding-right: 40px;
+}
+.form-text {
+   font-size: 1.4rem;
+   color: rgba(255, 255, 255, 0.795);
+   text-align: left;
+   max-width: 600px;
+   margin-bottom: 50px;
+}
+.faculdade-lista {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 15px;
+   margin-bottom: 50px;
+}
+.faculdade {
+   padding: 15px 20px;
+   background-color: black;
+   border-radius: 5px;
+   flex: 1;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+}
+.nome-do-curso {
+   margin-bottom: 40px;
+   margin-top: 10px;
+   color: #fff;
+   flex: 1;
+}
+.nome-do-curso::before {
+   content: "";
+   background: url("../img/detalhe.svg") center;
+   display: block;
+   width: 5px;
+   height: 20px;
+   position: absolute;
+   left: -5px;
+}
+.spanup, .spandown {
+   color: rgb(172, 172, 172);
+}
+.cursos {
+   position: relative;
+   margin-bottom: 30px;
+}
+.cursos h4 {
+   font-size: 1.25rem;
+   margin-bottom: 15px;
+   color: rgb(172, 172, 172);
+}
+.cursos h4::before {
+   content: "";
+   background: url("../img/cursos.svg") center;
+   display: block;
+   position: absolute;
+   width: 25px;
+   height: 25px;
+   left: -30px;
+}
+.cursos li {
+   font-size: 1.15rem;
+   color: #fff;
+   margin-bottom: 8px;
+   display: flex;
+   justify-content: space-between;
+}
+.cursos span {
+   color: rgb(172, 172, 172);
+}
+
+.idiomas {
+   position: relative;
+   margin-bottom: 30px;
+}
+.idiomas h4 {
+   font-size: 1.25rem;
+   margin-bottom: 15px;
+   color: rgb(172, 172, 172);
+}
+.idiomas h4::before {
+   content: "";
+   background: url("../img/idiomas.svg") center;
+   display: block;
+   position: absolute;
+   width: 25px;
+   height: 25px;
+   left: -30px;
+}
+.idiomas li {
+   font-size: 1.15rem;
+   color: #fff;
+   margin-bottom: 8px;
+}
+.idiomas span {
+   color: rgb(172, 172, 172);
+}
+.formacaot::after {
+   content: "";
+   width: 130px;
+   height: 100px;
+   background: url("../img/detalhe.svg") center no-repeat;
+   display: block;
+   position: absolute;
+   bottom: -50px;
+   left: 80px;
+}
+
+@media (max-width: 800px) {
+   .formacao {
+      grid-template-columns: 1fr;
+      gap: 40px;
+   }
+   .form-title {
+      font-size: 4.5rem;
+      word-break: normal;
+   }
+   .idiomas h4::before {
+      left: 80px;
+   }
+   .cursos h4::before {
+      left: 170px;
+   }
+}
